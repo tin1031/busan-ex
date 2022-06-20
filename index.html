@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/a947f92a9e.js" crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    // swiper1
+    const swiper = new Swiper('.first', {
+
+        direction:'vertical',
+        autoplay:true,
+        loop:true
+
+        });
+
+
+    const swiper3 = new Swiper(".second", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup:3,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+      breakpoints: {
+        // 768px보다 클 때 보여지는 것, pc기준으로 생각하기
+        768:{
+          slidesPerView:4,
+          spaceBetween:30,
+          slidesPerGroup:4,
+        }, 
+        1200:{
+          slidesPerView:3,
+          spaceBetween:30,
+          slidesPerGroup:3,
+        }
+      },
+  });
+
+  </script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="web">
+
+    <a href="#" class="go-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <div class="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="-"/></a>
+      </div>
+      <div class="inner">
+        <ul class="main-menu">
+          <li>
+            <input type="radio" name="ad" id="ad1">
+            <label for="ad1" class="first">부산에 가면
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)">명소</a></li>
+              <li><a href="javascript:void(0)">음식</a></li>
+              <li><a href="javascript:void(0)">숙박</a></li>
+              <li><a href="javascript:void(0)">쇼핑</a></li>
+              <li><a href="javascript:void(0)">축제</a></li>
+              <li><a href="javascript:void(0)">내주변</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="radio" name="ad" id="ad2">
+            <label for="ad2" class="first">추천여행
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)">테마여행</a></li>
+              <li><a href="javascript:void(0)">푸디투어</a></li>
+              <li><a href="javascript:void(0)">도보여행</a></li>
+              <li><a href="javascript:void(0)">해양/체험</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="radio" name="ad" id="ad3">
+            <label for="ad3" class="first">여행준비
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)">여행큐레이션</a></li>
+              <li><a href="javascript:void(0)">가이드북&지도</a></li>
+              <li><a href="javascript:void(0)">홍보물신청</a></li>
+              <li><a href="javascript:void(0)">문화관광해설사</a></li>
+              <li><a href="javascript:void(0)">여행준비정보</a></li>
+              <li><a href="javascript:void(0)">뉴스레터</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="radio" name="ad" id="ad4">
+            <label for="ad4" class="first">유용한 정보
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="sub-menu">
+              <li><a href="javascript:void(0)">공지·이벤트</a></li>
+              <li><a href="javascript:void(0)">설문</a></li>
+              <li><a href="javascript:void(0)">공연·행사</a></li>
+              <li><a href="javascript:void(0)">여행상품</a></li>
+              <li><a href="javascript:void(0)">관광안내소</a></li>
+              <li><a href="javascript:void(0)">부산여행영상</a></li>
+              <li><a href="javascript:void(0)">부산여행사진</a></li>
+              <li><a href="javascript:void(0)">여행공유</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="search">
+        <a class="search-btn" href="javascript:void(0)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <div class="input-box">
+          <input type="text" id="search-txt" placeholder="검색어 입력" />
+        </div>
+        <span class="clear" onclick="document.getElementById('search-txt').value = ''"></span>
+      </div>
+      <div class="login">
+        <button class="sub1">예약하기</button>
+        <button class="sub2">로그인</button>
+      </div>
+    </header>
+    <!-- Main -->
+    <section class="main">
+      <div class="drops">
+        <div class="drop"></div>
+      </div>
+      <div class="drops">
+        <div class="drop"></div>
+      </div>
+      <div class="drops">
+        <div class="drop"></div>
+      </div>
+      <div class="main-box">
+        <h3>Welcome to</h3>
+        <h1>BUSAN</h1>
+      </div>
+    </section>
+    <!-- Notice -->
+    <section class="notice">
+      <div class="inner">
+        <h2>공지사항</h2>
+        <div class="swiper-container first">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">PC 스크린세이버(화면보호기)용 부산관광 사진 배포 안내</a>
+              <span>2022-05-27</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">부산시티투어버스 별바다부산 야경투어 타GO 이벤트</a>
+              <span>2022-05-19</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">2022 부산대표 관광기념품 10선 공모전 안내</a>
+              <span>2022-05-17</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">부산관광브랜드 로고 디자인 아이디어 공모 심사 결과 발표 연기 알림</a>
+              <span>2022-05-13</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">동남권 연계 관광상품 발굴 공모 안내</a>
+              <span>2022-05-10</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Travel -->
+    <section class="travel">
+      <div class="inner">
+        <div class="theme">
+          <h3>부산 힐링 여행</h3>
+          <hr>
+          <h5>부산의 대표적인 힐링지를 만나보세요</h5>
+        </div>
+        <div class="swiper-container second">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel1.png" alt=""/>
+                <a href="javascript:void(0)">몽돌해변</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel2.jpg" alt=""/>
+                <a href="javascript:void(0)">달음산 자연휴양림</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel3.jpg" alt=""/>
+                <a href="javascript:void(0)">영도·송도</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel4.jpg" alt=""/>
+                <a href="javascript:void(0)">죽성성당</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel5.jpg" alt=""/>
+                <a href="javascript:void(0)">송정해수욕장</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel6.jpg" alt=""/>
+                <a href="javascript:void(0)">구봉산 치유숲길</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel7.jpg" alt=""/>
+                <a href="javascript:void(0)">허브랑 힐링 숲</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="img/travel8.jpg" alt=""/>
+                <a href="javascript:void(0)">금정산</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-box">
+        <div class="content">
+          <h2>부산시티투어버스</h2>
+          <p>밤의 낭만을 떠안고 야경 투어 브릿지 드라이브를 즐겨보세요</p>
+          <button class="morebtn">more</button>
+        </div>
+      </div>
+    </section>
+    <!-- Go Busan -->
+    <section class="go-busan">
+      <div class="inner">
+        <div class="theme">
+          <h3>부산의 인기 여행지</h3>
+          <hr>
+          <h5>고민 없이 부산의 인기 여행지를 찾아 떠나보자!</h5>
+        </div>
+        <div class="theme-box">
+          <div class="boxing">
+            <div class="box box1">
+              <div class="desc">
+                <a href="#none">부산 바다의 정석, 해운대해수욕장</a>
+                <div class="icon-box">
+                  <i class="fa-regular fa-eye">
+                    <span>2220</span>
+                  </i>
+                  <i class="fa-regular fa-comment">
+                    <span>4</span>
+                  </i>
+                  <i class="fa-regular fa-heart">
+                    <span>55</span>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="box box2">
+              <div class="desc">
+                <a href="#none">KT&G 상상마당 부산</a>
+                <div class="icon-box">
+                  <i class="fa-regular fa-eye">
+                    <span>1320</span>
+                  </i>
+                  <i class="fa-regular fa-comment">
+                    <span>2</span>
+                  </i>
+                  <i class="fa-regular fa-heart">
+                    <span>4</span>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxing">
+            <div class="box box3">
+              <div class="desc">
+                <a href="#none">광안리의 밤은 당신의 낮보다 아름답다</a>
+                <div class="icon-box">
+                  <i class="fa-regular fa-eye">
+                    <span>1020</span>
+                  </i>
+                  <i class="fa-regular fa-comment">
+                    <span>0</span>
+                  </i>
+                  <i class="fa-regular fa-heart">
+                    <span>15</span>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="box box4">
+              <div class="desc">
+                <a href="#none">봄의 설렘 안고 떠나는 로맨틱 기장 드라이브</a>
+                <div class="icon-box">
+                  <i class="fa-regular fa-eye">
+                    <span>1220</span>
+                  </i>
+                  <i class="fa-regular fa-comment">
+                    <span>1</span>
+                  </i>
+                  <i class="fa-regular fa-heart">
+                    <span>18</span>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box5">
+            <div class="desc">
+              <a href="#none">눈부신 나의 봄날, 인생샷 찍기 좋은 부산 봄꽃 추천 여행지!</a>
+              <div class="icon-box">
+                <i class="fa-regular fa-eye">
+                  <span>1920</span>
+                </i>
+                <i class="fa-regular fa-comment">
+                  <span>6</span>
+                </i>
+                <i class="fa-regular fa-heart">
+                  <span>30</span>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <section class="wave">
+        <div class="wave-box wave1"></div>
+        <div class="wave-box wave2"></div>
+        <div class="wave-box wave3"></div>
+        <div class="wave-box wave4"></div>
+      </section>
+      <div class="inner">
+        <div class="left">
+          <div class="footer-box">
+            <div>
+              <ul>
+                <li>제공</li>
+                <li>visit</li>
+                <li>busan</li>
+              </ul>
+              <ul>
+                <li><span>개인정보보호방침</span></li>
+                <li>저작권보호정책</li>
+                <li>약관</li>
+                <li>행정서비스현황</li>
+                <li>뷰어다운로드</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>관광문의</li>
+                <li><img src="img/footer.png" alt=""/></li>
+              </ul>
+              <ul>
+                <li>민원대표전화</li>
+                <li>051-120</li>
+              </ul>
+            </div>
+            <div class="lastd">
+              <ul>
+                <li>평일 8:30 - 18:30</li>
+                <li>※ 야간/공휴일 등 근무시간외는 당직실로 전환</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="btn-box">
+            <button class="footer-btn">부산문화포탈 다봄</button>
+            <button class="footer-btn">여행 상담</button>
+          </div>
+          <p>→ visit busan social media</p>
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-blogger-b"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>Copyright Busan Metropolitan City. All rights reserved.</span>
+    </footer>
+  </div>
+  
+</body>
+</html>
