@@ -881,7 +881,8 @@ footer .inner .left .footer-box div {
 }
 
 footer .inner .left .footer-box div ul li {
-  margin: 15px 30px;
+  width: 170px;
+  margin: 15px 10px;
 }
 
 footer .inner .left .footer-box div ul li span {

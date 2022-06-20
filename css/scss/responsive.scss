@@ -308,16 +308,6 @@
         flex-direction: column;
         .left{
           margin: auto;
-          .footer-box{
-            div{
-              width: 300px;
-            }
-            .lastd{
-              ul{
-                line-height: 1.2em;
-              }
-            }
-          }
         }
         .right{
           margin-top: 20px;
@@ -634,8 +624,10 @@
             }
             .lastd{
               ul{
-                width: 500px;
-                line-height: 1.2em;
+                width: 100%;
+                li{
+                  width: 100%;
+                }
               }
             }
           }

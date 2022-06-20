@@ -1,7 +1,4 @@
 @media (max-width: 1200px) {
-  html {
-    scroll-behavior: smooth;
-  }
   .inner {
     width: 100%;
     padding: 25px;
@@ -52,33 +49,6 @@
     top: 50%;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-  }
-  .go-top {
-    display: block;
-    position: fixed;
-    bottom: -40px;
-    right: 40px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: #fff;
-    z-index: 35;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    line-height: 55px;
-    cursor: pointer;
-    -webkit-transition: .2s;
-    transition: .2s;
-    color: #2F85CD;
-    opacity: 0;
-  }
-  .go-top i {
-    font-size: 22px;
-  }
-  .go-top.active {
-    bottom: 40px;
-    opacity: 1;
   }
   .search {
     position: -webkit-sticky;
@@ -345,12 +315,6 @@
   }
   footer .inner .left {
     margin: auto;
-  }
-  footer .inner .left .footer-box div {
-    width: 300px;
-  }
-  footer .inner .left .footer-box .lastd ul {
-    line-height: 1.2em;
   }
   footer .inner .right {
     margin-top: 20px;
@@ -689,8 +653,10 @@
     width: 250px;
   }
   footer .inner .left .footer-box .lastd ul {
-    width: 500px;
-    line-height: 1.2em;
+    width: 100%;
+  }
+  footer .inner .left .footer-box .lastd ul li {
+    width: 100%;
   }
   footer .inner .right {
     margin-top: 10px;
