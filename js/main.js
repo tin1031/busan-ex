@@ -28,6 +28,18 @@ $(function(){
     }
   })
 
+  window.addEventListener('scroll', function(){
+    let value = window.innerWidth
+    console.log("window.innerWidth", value)
+
+    if(value<1200){
+      $('header').removeClass('pcactive')
+      $('.trigger').click(function(){
+        $('header').addClass('pcactive')
+      })
+    }
+  })
+
 
 
 })
