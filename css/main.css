@@ -76,7 +76,7 @@ button, input, textarea, select {
 }
 
 .theme h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .theme hr {
@@ -89,7 +89,7 @@ button, input, textarea, select {
 }
 
 .theme h5 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -508,7 +508,7 @@ header.pcactive {
 
 .notice .inner h2 {
   width: 100px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .notice .inner .swiper-container.first {
@@ -517,6 +517,7 @@ header.pcactive {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-size: 18px;
 }
 
 .notice .inner .swiper-container.first .swiper-wrapper {
@@ -539,6 +540,8 @@ header.pcactive {
 }
 
 .notice .inner .swiper-container.first .swiper-wrapper .swiper-slide a {
+  font-size: 17px;
+  line-height: 1.5em;
   padding: 30px;
   text-align: center;
   -webkit-box-flex: 4;
@@ -547,11 +550,12 @@ header.pcactive {
 }
 
 .notice .inner .swiper-container.first .swiper-wrapper .swiper-slide span {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  padding-right: 20px;
 }
 
 .travel {
@@ -567,16 +571,13 @@ header.pcactive {
 }
 
 .travel .inner .swiper-container.second .swiper-wrapper {
-  width: 800px;
+  width: 100%;
   margin: auto;
 }
 
 .travel .inner .swiper-container.second .swiper-wrapper .swiper-slide {
   width: 170px !important;
   height: 170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .travel .inner .swiper-container.second .swiper-wrapper .swiper-slide .box {

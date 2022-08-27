@@ -27,17 +27,20 @@
 
         });
 
-
     const swiper3 = new Swiper(".second", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup:3,
+    slidesPerView: 3, //슬라이드 갯수
+    spaceBetween: 30, //간격
+    slidesPerGroup:3, //이동갯수
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
       breakpoints: {
         // 768px보다 클 때 보여지는 것, pc기준으로 생각하기
+        480:{
+          spaceBetween:20,
+          slidesPerGroup:2,
+        },
         768:{
           slidesPerView:4,
           spaceBetween:30,
